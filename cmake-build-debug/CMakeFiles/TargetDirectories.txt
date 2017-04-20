@@ -1,0 +1,3 @@
+/home/archie/Devel/PRL/proj3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/archie/Devel/PRL/proj3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/archie/Devel/PRL/proj3/cmake-build-debug/CMakeFiles/proj3.dir

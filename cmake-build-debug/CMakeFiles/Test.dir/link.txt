@@ -1,0 +1,1 @@
+mpicxx   -g   CMakeFiles/Test.dir/Matrices.cpp.o CMakeFiles/Test.dir/test.cpp.o  -o Test 

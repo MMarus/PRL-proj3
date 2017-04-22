@@ -123,32 +123,86 @@ proj3/fast:
 	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/build
 .PHONY : proj3/fast
 
-main.o: main.cpp.o
+Matrices.o: Matrices.cpp.o
 
-.PHONY : main.o
+.PHONY : Matrices.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/main.cpp.o
-.PHONY : main.cpp.o
+Matrices.cpp.o:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/Matrices.cpp.o
+.PHONY : Matrices.cpp.o
 
-main.i: main.cpp.i
+Matrices.i: Matrices.cpp.i
 
-.PHONY : main.i
+.PHONY : Matrices.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/main.cpp.i
-.PHONY : main.cpp.i
+Matrices.cpp.i:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/Matrices.cpp.i
+.PHONY : Matrices.cpp.i
 
-main.s: main.cpp.s
+Matrices.s: Matrices.cpp.s
 
-.PHONY : main.s
+.PHONY : Matrices.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/main.cpp.s
-.PHONY : main.cpp.s
+Matrices.cpp.s:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/Matrices.cpp.s
+.PHONY : Matrices.cpp.s
+
+Worker.o: Worker.cpp.o
+
+.PHONY : Worker.o
+
+# target to build an object file
+Worker.cpp.o:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/Worker.cpp.o
+.PHONY : Worker.cpp.o
+
+Worker.i: Worker.cpp.i
+
+.PHONY : Worker.i
+
+# target to preprocess a source file
+Worker.cpp.i:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/Worker.cpp.i
+.PHONY : Worker.cpp.i
+
+Worker.s: Worker.cpp.s
+
+.PHONY : Worker.s
+
+# target to generate assembly for a file
+Worker.cpp.s:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/Worker.cpp.s
+.PHONY : Worker.cpp.s
+
+mm.o: mm.cpp.o
+
+.PHONY : mm.o
+
+# target to build an object file
+mm.cpp.o:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/mm.cpp.o
+.PHONY : mm.cpp.o
+
+mm.i: mm.cpp.i
+
+.PHONY : mm.i
+
+# target to preprocess a source file
+mm.cpp.i:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/mm.cpp.i
+.PHONY : mm.cpp.i
+
+mm.s: mm.cpp.s
+
+.PHONY : mm.s
+
+# target to generate assembly for a file
+mm.cpp.s:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/mm.cpp.s
+.PHONY : mm.cpp.s
 
 # Help Target
 help:
@@ -159,9 +213,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... proj3"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Matrices.o"
+	@echo "... Matrices.i"
+	@echo "... Matrices.s"
+	@echo "... Worker.o"
+	@echo "... Worker.i"
+	@echo "... Worker.s"
+	@echo "... mm.o"
+	@echo "... mm.i"
+	@echo "... mm.s"
 .PHONY : help
 
 

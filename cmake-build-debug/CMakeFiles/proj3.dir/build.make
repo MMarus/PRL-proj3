@@ -57,41 +57,93 @@ include CMakeFiles/proj3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/proj3.dir/flags.make
 
-CMakeFiles/proj3.dir/main.cpp.o: CMakeFiles/proj3.dir/flags.make
-CMakeFiles/proj3.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/archie/Devel/PRL/proj3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proj3.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj3.dir/main.cpp.o -c /home/archie/Devel/PRL/proj3/main.cpp
+CMakeFiles/proj3.dir/mm.cpp.o: CMakeFiles/proj3.dir/flags.make
+CMakeFiles/proj3.dir/mm.cpp.o: ../mm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/archie/Devel/PRL/proj3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proj3.dir/mm.cpp.o"
+	mpicxx   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj3.dir/mm.cpp.o -c /home/archie/Devel/PRL/proj3/mm.cpp
 
-CMakeFiles/proj3.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj3.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/archie/Devel/PRL/proj3/main.cpp > CMakeFiles/proj3.dir/main.cpp.i
+CMakeFiles/proj3.dir/mm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj3.dir/mm.cpp.i"
+	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/archie/Devel/PRL/proj3/mm.cpp > CMakeFiles/proj3.dir/mm.cpp.i
 
-CMakeFiles/proj3.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj3.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/archie/Devel/PRL/proj3/main.cpp -o CMakeFiles/proj3.dir/main.cpp.s
+CMakeFiles/proj3.dir/mm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj3.dir/mm.cpp.s"
+	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/archie/Devel/PRL/proj3/mm.cpp -o CMakeFiles/proj3.dir/mm.cpp.s
 
-CMakeFiles/proj3.dir/main.cpp.o.requires:
+CMakeFiles/proj3.dir/mm.cpp.o.requires:
 
-.PHONY : CMakeFiles/proj3.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/proj3.dir/mm.cpp.o.requires
 
-CMakeFiles/proj3.dir/main.cpp.o.provides: CMakeFiles/proj3.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/proj3.dir/main.cpp.o.provides
+CMakeFiles/proj3.dir/mm.cpp.o.provides: CMakeFiles/proj3.dir/mm.cpp.o.requires
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/mm.cpp.o.provides.build
+.PHONY : CMakeFiles/proj3.dir/mm.cpp.o.provides
 
-CMakeFiles/proj3.dir/main.cpp.o.provides.build: CMakeFiles/proj3.dir/main.cpp.o
+CMakeFiles/proj3.dir/mm.cpp.o.provides.build: CMakeFiles/proj3.dir/mm.cpp.o
+
+
+CMakeFiles/proj3.dir/Matrices.cpp.o: CMakeFiles/proj3.dir/flags.make
+CMakeFiles/proj3.dir/Matrices.cpp.o: ../Matrices.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/archie/Devel/PRL/proj3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proj3.dir/Matrices.cpp.o"
+	mpicxx   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj3.dir/Matrices.cpp.o -c /home/archie/Devel/PRL/proj3/Matrices.cpp
+
+CMakeFiles/proj3.dir/Matrices.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj3.dir/Matrices.cpp.i"
+	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/archie/Devel/PRL/proj3/Matrices.cpp > CMakeFiles/proj3.dir/Matrices.cpp.i
+
+CMakeFiles/proj3.dir/Matrices.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj3.dir/Matrices.cpp.s"
+	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/archie/Devel/PRL/proj3/Matrices.cpp -o CMakeFiles/proj3.dir/Matrices.cpp.s
+
+CMakeFiles/proj3.dir/Matrices.cpp.o.requires:
+
+.PHONY : CMakeFiles/proj3.dir/Matrices.cpp.o.requires
+
+CMakeFiles/proj3.dir/Matrices.cpp.o.provides: CMakeFiles/proj3.dir/Matrices.cpp.o.requires
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/Matrices.cpp.o.provides.build
+.PHONY : CMakeFiles/proj3.dir/Matrices.cpp.o.provides
+
+CMakeFiles/proj3.dir/Matrices.cpp.o.provides.build: CMakeFiles/proj3.dir/Matrices.cpp.o
+
+
+CMakeFiles/proj3.dir/Worker.cpp.o: CMakeFiles/proj3.dir/flags.make
+CMakeFiles/proj3.dir/Worker.cpp.o: ../Worker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/archie/Devel/PRL/proj3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/proj3.dir/Worker.cpp.o"
+	mpicxx   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj3.dir/Worker.cpp.o -c /home/archie/Devel/PRL/proj3/Worker.cpp
+
+CMakeFiles/proj3.dir/Worker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj3.dir/Worker.cpp.i"
+	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/archie/Devel/PRL/proj3/Worker.cpp > CMakeFiles/proj3.dir/Worker.cpp.i
+
+CMakeFiles/proj3.dir/Worker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj3.dir/Worker.cpp.s"
+	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/archie/Devel/PRL/proj3/Worker.cpp -o CMakeFiles/proj3.dir/Worker.cpp.s
+
+CMakeFiles/proj3.dir/Worker.cpp.o.requires:
+
+.PHONY : CMakeFiles/proj3.dir/Worker.cpp.o.requires
+
+CMakeFiles/proj3.dir/Worker.cpp.o.provides: CMakeFiles/proj3.dir/Worker.cpp.o.requires
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/Worker.cpp.o.provides.build
+.PHONY : CMakeFiles/proj3.dir/Worker.cpp.o.provides
+
+CMakeFiles/proj3.dir/Worker.cpp.o.provides.build: CMakeFiles/proj3.dir/Worker.cpp.o
 
 
 # Object files for target proj3
 proj3_OBJECTS = \
-"CMakeFiles/proj3.dir/main.cpp.o"
+"CMakeFiles/proj3.dir/mm.cpp.o" \
+"CMakeFiles/proj3.dir/Matrices.cpp.o" \
+"CMakeFiles/proj3.dir/Worker.cpp.o"
 
 # External object files for target proj3
 proj3_EXTERNAL_OBJECTS =
 
-proj3: CMakeFiles/proj3.dir/main.cpp.o
+proj3: CMakeFiles/proj3.dir/mm.cpp.o
+proj3: CMakeFiles/proj3.dir/Matrices.cpp.o
+proj3: CMakeFiles/proj3.dir/Worker.cpp.o
 proj3: CMakeFiles/proj3.dir/build.make
 proj3: CMakeFiles/proj3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/archie/Devel/PRL/proj3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable proj3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/archie/Devel/PRL/proj3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable proj3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proj3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +151,9 @@ CMakeFiles/proj3.dir/build: proj3
 
 .PHONY : CMakeFiles/proj3.dir/build
 
-CMakeFiles/proj3.dir/requires: CMakeFiles/proj3.dir/main.cpp.o.requires
+CMakeFiles/proj3.dir/requires: CMakeFiles/proj3.dir/mm.cpp.o.requires
+CMakeFiles/proj3.dir/requires: CMakeFiles/proj3.dir/Matrices.cpp.o.requires
+CMakeFiles/proj3.dir/requires: CMakeFiles/proj3.dir/Worker.cpp.o.requires
 
 .PHONY : CMakeFiles/proj3.dir/requires
 

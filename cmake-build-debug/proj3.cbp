@@ -82,7 +82,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/archie/Devel/PRL/proj3/main.cpp">
+		<Unit filename="/home/archie/Devel/PRL/proj3/Matrices.cpp">
+			<Option target="proj3"/>
+		</Unit>
+		<Unit filename="/home/archie/Devel/PRL/proj3/Matrices.h">
+			<Option target="proj3"/>
+		</Unit>
+		<Unit filename="/home/archie/Devel/PRL/proj3/Worker.cpp">
+			<Option target="proj3"/>
+		</Unit>
+		<Unit filename="/home/archie/Devel/PRL/proj3/Worker.h">
+			<Option target="proj3"/>
+		</Unit>
+		<Unit filename="/home/archie/Devel/PRL/proj3/mm.cpp">
+			<Option target="proj3"/>
+		</Unit>
+		<Unit filename="/home/archie/Devel/PRL/proj3/tags.h">
 			<Option target="proj3"/>
 		</Unit>
 		<Unit filename="/home/archie/Devel/PRL/proj3/CMakeLists.txt">

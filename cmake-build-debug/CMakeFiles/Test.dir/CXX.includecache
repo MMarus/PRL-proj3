@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/archie/Devel/PRL/proj3/Matrices.cpp
+iostream
+-
+iterator
+-
+vector
+-
+sstream
+-
+fstream
+-
+Matrices.h
+/home/archie/Devel/PRL/proj3/Matrices.h
+
+/home/archie/Devel/PRL/proj3/Matrices.h
+vector
+-
+string
+-
+
+/home/archie/Devel/PRL/proj3/test.cpp
+iostream
+-
+Matrices.h
+/home/archie/Devel/PRL/proj3/Matrices.h
+

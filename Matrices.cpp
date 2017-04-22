@@ -42,7 +42,7 @@ void Matrices::loadMatrices() {
 
     resultRows = mat1Size;
     resultCols = mat2Size;
-    cerr << "resultRows " << resultRows<<" resultCols "<<resultCols << endl;
+//    cerr << "resultRows " << resultRows<<" resultCols "<<resultCols << endl;
     sameDimensionOfMatrices = mat1[0].size();
 }
 
@@ -67,9 +67,6 @@ void Matrices::readMatrix(string filename, int matrixId) {
     firstLine = matrix[0][0];
     matrix.erase(matrix.begin());
 
-//    cerr << "Rows: " << matrix.size() << endl;
-//    cerr << "Cols: " << matrix[0].size() << endl;
-
     if(matrixId == 1) {
         swap(matrix, mat1);
         mat1Size = firstLine;
@@ -91,56 +88,3 @@ void Matrices::writeFirstMatrix() {
         cout << endl;
     }
 }
-
-
-
-
-
-
-
-
-
-
-//string matrix1FileName = "mat1";
-//string matrix2FileName = "mat2";
-//std::string line;
-//fstream fin;                                    //cteni ze souboru
-//
-//mat1.clear();
-//fin.open(matrix1FileName, ios::in);
-//
-//if(!fin.good()){
-//cerr << "Error: not good file" << endl;
-//return;
-//}
-//
-//while ( getline( fin, line ) ) {
-//istringstream is( line );
-//mat1.push_back(vector<int>( istream_iterator<int>(is), istream_iterator<int>() ) );
-//}
-//
-//mat1Size = mat1[0][0];
-//mat1.erase(mat1.begin());
-//
-//cerr << "Rows: " << mat1.size() << endl;
-//cerr << "Cols: " << mat1[0].size() << endl;
-//
-//
-//mat2.clear();
-//fin.open(matrix2FileName, ios::in);
-//
-//if(!fin.good()){
-//cerr << "Error: not good file" << endl;
-//return;
-//}
-//
-//while ( getline( fin, line ) ) {
-//istringstream is( line );
-//mat1.push_back(vector<int>( istream_iterator<int>(is), istream_iterator<int>() ) );
-//}
-//
-//mat1Size = mat1[0][0];
-//mat1.erase(mat1.begin());
-//
-//cerr << "Rows: " << mat1.size() << endl;
-//cerr << "Cols: " << mat1[0].size() << endl;

@@ -22,12 +22,32 @@ void Worker::loadMatrices() {
 void Worker::setMyRowAndCol() {
     myRow = myId / matrices.resultCols;
     myCol = myId % matrices.resultCols;
-    cout << "myId = " << myId << " myRow = " << myRow << " myCol =" << myCol << endl;
+    myLeftNeighbour = myId-1;
+    myRightNeighbour = myId+1;
+    myTopNeighbour = myId - matrices.resultCols;
+    myBottomNeighbour = myId + matrices.resultCols;
+//    cout << "myId = " << myId << " myRow = " << myRow << " myCol =" << myCol << endl;
 }
 
 void Worker::computeMyNumber() {
     for (int i = 0; i < matrices.sameDimensionOfMatrices; ++i) {
-        myResult += matrices.mat1[myRow][i] * matrices.mat2[i][myCol];
+        if (myCol == 0)
+            a = matrices.mat1[myRow][i];
+        else
+            MPI_Recv(&a, 1, MPI_INT, myLeftNeighbour, TAGRESULT, MPI_COMM_WORLD, &stat);
+
+        if (myRow == 0)
+            b = matrices.mat2[i][myCol];
+        else
+            MPI_Recv(&b, 1, MPI_INT, myTopNeighbour, TAGRESULT, MPI_COMM_WORLD, &stat);
+
+        myResult += a * b;
+
+        if (myCol != matrices.resultCols-1)
+            MPI_Send(&a, 1, MPI_INT, myRightNeighbour, TAGRESULT, MPI_COMM_WORLD);
+        if (myRow != matrices.resultRows-1)
+            MPI_Send(&b, 1, MPI_INT, myBottomNeighbour, TAGRESULT, MPI_COMM_WORLD);
+
     }
 }
 

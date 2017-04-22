@@ -22,12 +22,19 @@ public:
 
 private:
     Matrices matrices;
+    int a;
+    int b;
     int myId;
     int numOfProcs;
     int myRow;
     int myCol;
-    int myResult;               //moje hodnota
+    int myResult;
+    int myBottomNeighbour;
+    int myLeftNeighbour;
+    int myTopNeighbour;
+    int myRightNeighbour;
     MPI_Status stat;            //struct- obsahuje kod- source, tag, error
+
     void setMyRowAndCol();
 
 };

@@ -6,8 +6,6 @@
 
 #include <mpi.h>
 #include <fstream>
-#include <sstream>
-#include "tags.h"
 #include "Matrices.h"
 #include "Worker.h"
 
@@ -21,7 +19,7 @@ int main(int argc, char *argv[])
     int numprocs;               //pocet procesoru
     int myid;                   //muj rank
     Matrices matrices;
-
+    timespec tS;
 
     //MPI INIT
     MPI_Init(&argc,&argv);                          // inicializace MPI
@@ -32,8 +30,23 @@ int main(int argc, char *argv[])
     worker.loadMatrices();
 
     //meranie start
+    if(myid == 0) {
+        tS.tv_sec = 0;
+        tS.tv_nsec = 0;
+        clock_settime(CLOCK_PROCESS_CPUTIME_ID, &tS);
+    }
+
     worker.computeMyNumber();
+
     //meranie stop
+    if(myid == 0) {
+        clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &tS);
+        //Zapis merania casu
+        fstream fout;
+        fout.open("times", ios::app);
+        fout << numprocs << ";" << tS.tv_sec << ";" << tS.tv_nsec << endl;
+        fout.close();
+    }
 
     if(myid == 0){
         worker.readValuesByMaster();

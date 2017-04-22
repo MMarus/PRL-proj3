@@ -5,8 +5,8 @@
 #ifndef PROJ3_TAGS_H
 #define PROJ3_TAGS_H
 
-#define TAGX 0
-#define TAGY 1
+#define TAGA 0
+#define TAGB 1
 #define TAGRESULT 2
 
 

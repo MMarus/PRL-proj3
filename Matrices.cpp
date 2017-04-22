@@ -42,7 +42,6 @@ void Matrices::loadMatrices() {
 
     resultRows = mat1Size;
     resultCols = mat2Size;
-//    cerr << "resultRows " << resultRows<<" resultCols "<<resultCols << endl;
     sameDimensionOfMatrices = mat1[0].size();
 }
 

@@ -12,11 +12,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7d33cd-b36d-4b50-abe1-ee1b422fbda1" name="Default" comment="Zasielanie sprav medzi procesormi.">
+    <list default="true" id="ff7d33cd-b36d-4b50-abe1-ee1b422fbda1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Matrices.cpp" afterPath="$PROJECT_DIR$/Matrices.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Worker.cpp" afterPath="$PROJECT_DIR$/Worker.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Worker.h" afterPath="$PROJECT_DIR$/Worker.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mm.cpp" afterPath="$PROJECT_DIR$/mm.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags.h" afterPath="$PROJECT_DIR$/tags.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +34,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mm.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mm.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mm.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="556">
+              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
               <folding>
                 <element signature="e#77#93#0" expanded="true" />
               </folding>
@@ -44,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Worker.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Worker.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Worker.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="55" column="58" lean-forward="false" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
+            <state relative-caret-position="198">
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="e#39#55#0" expanded="true" />
               </folding>
@@ -56,11 +58,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="tags.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tags.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Matrices.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Matrices.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="-326">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,8 +81,8 @@
       <file leaf-file-name="Worker.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Worker.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+            <state relative-caret-position="340">
+              <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
               <folding>
                 <element signature="e#88#109#0" expanded="true" />
               </folding>
@@ -101,13 +113,13 @@
         <option value="$PROJECT_DIR$/mat2" />
         <option value="$PROJECT_DIR$/Matrices.h" />
         <option value="$PROJECT_DIR$/test.sh" />
-        <option value="$PROJECT_DIR$/tags.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/mm.cpp" />
-        <option value="$PROJECT_DIR$/Worker.h" />
-        <option value="$PROJECT_DIR$/Worker.cpp" />
         <option value="$PROJECT_DIR$/../prl_mesh_multiplication_tests/testMyProject.sh" />
         <option value="$PROJECT_DIR$/Matrices.cpp" />
+        <option value="$PROJECT_DIR$/Worker.h" />
+        <option value="$PROJECT_DIR$/Worker.cpp" />
+        <option value="$PROJECT_DIR$/tags.h" />
+        <option value="$PROJECT_DIR$/mm.cpp" />
       </list>
     </option>
   </component>
@@ -394,12 +406,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492711392111</updated>
-      <workItem from="1492711394285" duration="31789000" />
+      <workItem from="1492711394285" duration="32384000" />
     </task>
+    <task id="LOCAL-00001" summary="Zasielanie sprav medzi procesormi.">
+      <created>1492877351800</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492877351800</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31789000" />
+    <option name="totallyTimeSpent" value="32384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="749" extended-state="0" />
@@ -511,34 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tags.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Worker.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding>
-            <element signature="e#88#109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mm.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#77#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../prl_mesh_multiplication_tests/testMyProject.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -549,18 +541,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Matrices.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="-326">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Worker.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding>
+            <element signature="e#88#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/bits/time.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Worker.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="55" column="58" lean-forward="false" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
+        <state relative-caret-position="198">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="e#39#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding>
+            <element signature="e#77#93#0" expanded="true" />
           </folding>
         </state>
       </provider>

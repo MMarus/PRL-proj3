@@ -33,7 +33,7 @@ private:
     int myLeftNeighbour;
     int myTopNeighbour;
     int myRightNeighbour;
-    MPI_Status stat;            //struct- obsahuje kod- source, tag, error
+    MPI_Status stat;
 
     void setMyRowAndCol();
 

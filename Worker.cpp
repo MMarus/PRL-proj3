@@ -14,7 +14,6 @@ Worker::Worker(int id, int numprocs) {
 }
 
 void Worker::loadMatrices() {
-    //Nacitanie matic
     matrices.loadMatrices();
     setMyRowAndCol();
 }
@@ -26,7 +25,6 @@ void Worker::setMyRowAndCol() {
     myRightNeighbour = myId+1;
     myTopNeighbour = myId - matrices.resultCols;
     myBottomNeighbour = myId + matrices.resultCols;
-//    cout << "myId = " << myId << " myRow = " << myRow << " myCol =" << myCol << endl;
 }
 
 void Worker::computeMyNumber() {
@@ -34,19 +32,19 @@ void Worker::computeMyNumber() {
         if (myCol == 0)
             a = matrices.mat1[myRow][i];
         else
-            MPI_Recv(&a, 1, MPI_INT, myLeftNeighbour, TAGRESULT, MPI_COMM_WORLD, &stat);
+            MPI_Recv(&a, 1, MPI_INT, myLeftNeighbour, TAGA, MPI_COMM_WORLD, &stat);
 
         if (myRow == 0)
             b = matrices.mat2[i][myCol];
         else
-            MPI_Recv(&b, 1, MPI_INT, myTopNeighbour, TAGRESULT, MPI_COMM_WORLD, &stat);
+            MPI_Recv(&b, 1, MPI_INT, myTopNeighbour, TAGB, MPI_COMM_WORLD, &stat);
 
         myResult += a * b;
 
         if (myCol != matrices.resultCols-1)
-            MPI_Send(&a, 1, MPI_INT, myRightNeighbour, TAGRESULT, MPI_COMM_WORLD);
+            MPI_Send(&a, 1, MPI_INT, myRightNeighbour, TAGA, MPI_COMM_WORLD);
         if (myRow != matrices.resultRows-1)
-            MPI_Send(&b, 1, MPI_INT, myBottomNeighbour, TAGRESULT, MPI_COMM_WORLD);
+            MPI_Send(&b, 1, MPI_INT, myBottomNeighbour, TAGB, MPI_COMM_WORLD);
 
     }
 }
